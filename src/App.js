@@ -2,9 +2,8 @@ import { Nav } from 'react-bootstrap';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './Components/Blog/Blog';
-import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
-import Navbar from './Components/Navbar/Navbar';
+import Quiz from './Components/Quiz/Quiz';
 import Statictics from './Components/Statistic/Statictics';
 import Main from './Layout/Main/Main';
 
@@ -18,6 +17,14 @@ function App() {
           path:'/',
           loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element:<Home></Home>
+        },
+        {
+          path:'/quiz/:quizId',
+          loader:async ({params}) =>{
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+          },
+          element:<Quiz></Quiz>
+
         },
         {
           path:'/static',

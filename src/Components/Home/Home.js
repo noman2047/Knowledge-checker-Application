@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import { useLoaderData } from 'react-router-dom';
-import CardGroup from 'react-bootstrap/CardGroup';
+import { useLoaderData } from 'react-router-dom'
 import picture from '../../Images/mcq.jpg'
 import Subject from '../Subjects/Subject';
 import Row from 'react-bootstrap/Row';
@@ -11,6 +10,8 @@ import './Home.css'
 const  Home = ()=>{
   const datas=useLoaderData();
   const subjects=datas.data;
+
+
   return (
     <div className="container">
      

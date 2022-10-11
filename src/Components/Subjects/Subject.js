@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './subject.css'
 const Subject = ({subject}) =>{
   const {logo,id,name,total}=subject;
@@ -10,7 +11,7 @@ const Subject = ({subject}) =>{
         <h2>{name}</h2>
         <p><small>Id: {id}</small></p>
         <p>Total Question: {total}</p>
-        <Button>Strat Practice</Button>
+        <Button><Link to={`/quiz/${id}`} style={{color:"white"}}>Strat Practic</Link></Button>
       </div>
     </div>
   );
