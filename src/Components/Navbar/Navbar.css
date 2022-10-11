@@ -1,0 +1,25 @@
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.linkup a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color:wheat;
+  border-radius: 30px;
+  padding: 1px 12px;
+
+}
+.linkup a:hover{
+  background-color: greenyellow;
+}
+.title{
+  color:greenyellow;
+  font-size: 30px;
+  font-family: Berkshire Swash,cursive;
+}

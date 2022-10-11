@@ -1,0 +1,11 @@
+.flex3{
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+}
+.flex3 img{
+  height: 200px;
+  background-color: gray;
+  border-radius: 20px;
+}

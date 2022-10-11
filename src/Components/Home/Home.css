@@ -1,0 +1,38 @@
+.flex1{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 30em) and (max-width: 50em) {
+  .flex1{
+    display:inline;
+  }
+  .Card-Text .text{
+    margin-bottom: 30px;
+}
+}
+Img{
+  height: 450px;
+}
+.text{
+  background-color:#dff7e7;
+  border-radius: 30px;
+  margin: 20px;
+  padding-top: 30px;
+  padding: 20px;
+}
+.text h3{
+  color: orange;
+}
+
+.text li{
+  margin: 30px;
+  font-weight: bold;
+
+}
+.groupofCart{
+  display: flex;
+}
