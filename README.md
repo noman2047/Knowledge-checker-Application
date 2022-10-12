@@ -7,6 +7,9 @@
 --->If we clicked home then we can see few topics css,js,node,react.we can check knowledge about in this topic.
 -->Crate bar chart about topic in statictis button.
 
+             -------------> Netlify Live Server Link <---------------
+             
+--> https://knowledge-checker-noman2047.netlify.app/
 
              ------------->Technology Used in this (App) <------------
 -->JavaScript.
