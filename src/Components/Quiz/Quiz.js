@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import QuizDetails from '../QuizDetails/QuizDetails';
 
+
 const Quiz = () => {
   const quizQuestions=useLoaderData();
   const mcqTopic=quizQuestions.data.name;
@@ -10,7 +11,7 @@ const Quiz = () => {
     <div>
       <h3 style={{marginTop:"50px",color:"blueviolet",fontWeight:"bold"}}>Quiz of {mcqTopic}</h3>
       {
-        getQuestions.map(getQuestion=><QuizDetails key={getQuestion.id} getQuestion={getQuestion}></QuizDetails>)
+        getQuestions.map((getQuestion,index)=><QuizDetails key={getQuestion.id} getQuestion={getQuestion}> {index+1}</QuizDetails>)
       }
     </div>
   );

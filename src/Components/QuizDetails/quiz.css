@@ -23,3 +23,22 @@
 .questions p:hover{
   background-color: goldenrod;
 }
+.logoAndname{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+.logo{
+  height: 25px;
+}
+.logoAndname button{
+  background-color: white;
+  color: blueviolet;
+  text-decoration: none;
+  border: none;
+}
+.logoAndname button:hover{
+  color: red;
+}
