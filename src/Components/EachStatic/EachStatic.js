@@ -1,9 +1,8 @@
 import React from 'react';
-import { PieChart, Pie, Legend, Tooltip, ResponsiveContainer,Cell } from 'recharts';
+import { PieChart, Pie, Tooltip} from 'recharts';
 
 const EachStatic = ({data}) => {
-  const {id,name,total}=data;
-  console.log(total)
+  const {name,total}=data;
   const data02 = [
     { name: `${name}`, value: total},
   ];

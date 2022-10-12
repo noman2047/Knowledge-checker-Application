@@ -4,7 +4,7 @@ const Blog = () => {
   return (
     <div className='container'>
       <h3 style={{textAlign:"center",margin:"20px"}}>Questions And Answers:</h3>
-          <div style={{border:"2px solid blue",margin:"20px",padding:"40px 10px",borderRadius:"20px"}}>
+          <div style={{border:"2px solid blue",margin:"20px",padding:"40px 10px",borderRadius:"20px",backgroundColor:"#dff7e7"}}>
           <h3>(1)What is a Purpose of React Router?</h3>
           <p><strong>Answer: </strong> React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL</p>
           <h3>(2)How does Context API work?</h3>

@@ -12,7 +12,7 @@ const Statictics = () => {
    <div>
       <div className='fewBarChart'>
       {
-        eachdata.map(data=><EachStatic data={data}></EachStatic>)
+        eachdata.map((data,index)=><EachStatic data={data} key={index}></EachStatic>)
       }
       </div>
    </div>
