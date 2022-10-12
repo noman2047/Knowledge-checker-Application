@@ -7,6 +7,7 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 
 const QuizDetails = (props) => {
   const {getQuestion,children}=props;
+  console.log(getQuestion);
   const {id,question,options,correctAnswer}=getQuestion;
 
   const CorrectAnswer = ()=>{

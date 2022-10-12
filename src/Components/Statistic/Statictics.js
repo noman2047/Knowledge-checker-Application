@@ -7,9 +7,7 @@ import './barchart.css'
 const Statictics = () => {
   const datas=useLoaderData();
   const eachdata=datas.data;
- 
 
-  
   return (
    <div>
       <div className='fewBarChart'>
