@@ -6,14 +6,31 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 
 
 const QuizDetails = (props) => {
-  const {getQuestion,children}=props;
-  console.log(getQuestion);
-  const {id,question,options,correctAnswer}=getQuestion;
+  let marks=[];
 
+  const {getQuestion,children}=props;
+  const {question,options,correctAnswer}=getQuestion;
+
+  const Answer=(option)=>{
+    if(option === correctAnswer){
+      console.log(option,correctAnswer);
+      toast.success(`Correct Answer.`, {
+        position: toast.POSITION.TOP_CENTER
+    });
+    }
+    else{
+      toast.error("Wrong Answer.", {
+        position: toast.POSITION.TOP_CENTER
+      });
+
+    }
+  }
   const CorrectAnswer = ()=>{
     toast.success(`Correct Answer Is :${correctAnswer}`, {
       position: toast.POSITION.TOP_RIGHT
   });
+
+
 }
 
   return (
@@ -26,8 +43,7 @@ const QuizDetails = (props) => {
        </div>
         <div className='option'>
           {
-          options.map(option=><p>{option}</p>)
-          
+          options.map(option=><p onClick={()=>Answer(option)}>{option}</p>)
           }
         </div>
       </div>
