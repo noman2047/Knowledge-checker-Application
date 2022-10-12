@@ -1,0 +1,10 @@
+
+.fewBarChart{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+@media (min-width: 30em) and (max-width: 50em) {
+  .fewBarChart{
+   display:inline;
+  }
+}
